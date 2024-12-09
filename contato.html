@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Fundamentos da Programação Web - Atividade Prática</title>
+	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo">
+			<h1>Cirlene Nascimento</h1>
+		</div>
+		
+		<nav>
+			<a href="index.html">Sobre min</a>
+			<a href="minha_formacao.html">Minha Formação</a>
+			<a href="portifolio.html">Portifólio</a>
+			<a href="contato.html">Contato</a>
+		</nav>
+	</div>
+
+	<div id="content">
+		<h2>Contato</h2>
+
+		<div id="contato">
+			<form>
+				<label for="nome">Nome para contato</label><br>
+				<input type="text" id="nome" style="width: 800px;"><br><br>
+				<label for="telefone">Número do telefone</label><br>
+				<input type="text" id="telefone"><br><br>
+				<label for="nome">Enviar mensagem</label><br>
+				<textarea type="text" id="mensagem" style="width: 800px; height: 100px;"></textarea><br>
+				<button type="button" onclick="enviarContato()">Enviar contato</button>
+			</form>
+		</div>
+
+	</div>
+	<script>
+		function enviarContato(){
+			let nome = document.getElementById("nome").value;
+			let telefone = document.getElementById("telefone").value;
+			let mensagem = document.getElementById("mensagem").value;
+
+			alert(nome + ", agradeço o seu contato e retornarei em breve para o número " + telefone);
+		}
+	</script>
+</body>
+
+</html>
