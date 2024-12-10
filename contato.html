@@ -17,7 +17,7 @@
 		</div>
 		
 		<nav>
-			<a href="index.html">Sobre min</a>
+			<a href="index.html">Sobre mim</a>
 			<a href="minha_formacao.html">Minha Formação</a>
 			<a href="portifolio.html">Portifólio</a>
 			<a href="contato.html">Contato</a>
@@ -31,8 +31,8 @@
 			<form>
 				<label for="nome">Nome para contato</label><br>
 				<input type="text" id="nome" style="width: 800px;"><br><br>
-				<label for="telefone">Número do telefone</label><br>
-				<input type="text" id="telefone"><br><br>
+				<label for="email">Endereço de e-mail</label><br>
+				<input type="text" id="email" style="width: 800px;"><br><br>
 				<label for="nome">Enviar mensagem</label><br>
 				<textarea type="text" id="mensagem" style="width: 800px; height: 100px;"></textarea><br>
 				<button type="button" onclick="enviarContato()">Enviar contato</button>
@@ -43,10 +43,10 @@
 	<script>
 		function enviarContato(){
 			let nome = document.getElementById("nome").value;
-			let telefone = document.getElementById("telefone").value;
+			let email = document.getElementById("email").value;
 			let mensagem = document.getElementById("mensagem").value;
 
-			alert(nome + ", agradeço o seu contato e retornarei em breve para o número " + telefone);
+			alert(nome + ", agradeço o seu contato e retornarei em breve para o e-mail: " + email);
 		}
 	</script>
 </body>
